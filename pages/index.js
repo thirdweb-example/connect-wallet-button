@@ -1,4 +1,6 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
+import CodeSnippet from "../components/DemoCodeSnippet";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -11,6 +13,14 @@ export default function Home() {
       </p>
 
       <ConnectWallet accentColor="#f213a4" colorMode="dark" />
+
+      <hr className={`${styles.divider} ${styles.spacerTop}`} />
+
+      <h2>Code Snippet</h2>
+
+      <CodeSnippet
+        text={`<ConnectWallet accentColor="#f213a4" colorMode="dark" />`}
+      />
     </div>
   );
 }
