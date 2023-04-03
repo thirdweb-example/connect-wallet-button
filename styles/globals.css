@@ -57,3 +57,7 @@ h2 {
 .prism-code {
 	margin: 0;
 }
+
+#walletconnect-wrapper a {
+	color: black;
+}
