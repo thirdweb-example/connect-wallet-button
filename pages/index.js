@@ -1,7 +1,6 @@
 import { ConnectWallet } from '@thirdweb-dev/react';
 import CodeSnippet from '../components/DemoCodeSnippet';
 import styles from '../styles/Home.module.css';
-import React from 'react';
 
 export default function Home() {
 	return (

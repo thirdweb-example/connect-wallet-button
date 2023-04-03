@@ -9,17 +9,17 @@ This template shows you how you can use our `ConnectWallet` component from our R
 ## Wrap Your Application in the ThirdwebProvider
 
 ```jsx
-import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider } from '@thirdweb-dev/react';
 
 // This is the chainId your dApp will work on.
-const activeChainId = ChainId.Goerli;
+const activeChain = 'goerli';
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
-      <Component {...pageProps} />
-    </ThirdwebProvider>
-  );
+	return (
+		<ThirdwebProvider activeChain={activeChain}>
+			<Component {...pageProps} />
+		</ThirdwebProvider>
+	);
 }
 
 export default MyApp;
@@ -28,11 +28,9 @@ export default MyApp;
 ## Use the Connect Wallet Component!
 
 ```jsx
-import { ConnectWallet } from "@thirdweb-dev/react";
+import { ConnectWallet } from '@thirdweb-dev/react';
 
 export default function Home() {
-  return (
-      <ConnectWallet accentColor="#f213a4" colorMode="dark" />
-  );
+	return <ConnectWallet theme='dark' />;
 }
 ```
