@@ -38,8 +38,37 @@
 	align-items: center;
 	flex-direction: column;
 	padding: 20px;
+	width: 100vw;
 }
 
 .header {
 	text-align: center;
+}
+
+.ul {
+	display: flex;
+	flex-direction: row;
+	/* background: darkblue; */
+	/* padding: 5%; */
+	width: 50%;
+	height: 50px;
+	border-radius: 10px;
+	text-decoration: none;
+	margin-right: auto;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	color: white;
+}
+
+.text {
+	text-decoration: none;
+	color: white;
+}
+
+.compCont{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

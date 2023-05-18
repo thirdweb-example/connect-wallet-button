@@ -1,6 +1,7 @@
 import { ConnectWallet } from '@thirdweb-dev/react';
 import CodeSnippet from '../components/DemoCodeSnippet';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -22,18 +23,8 @@ export default function Home() {
 
 			<hr className={`${styles.divider} ${styles.spacerTop}`} />
 
-			<h2>Code Snippet</h2>
+			
 
-			<CodeSnippet
-				text={`\
-<ConnectWallet
-  theme='dark'
-  dropdownPosition={{
-    align: 'center',
-    side: 'bottom',
-  }}
-/>`}
-			/>
 		</div>
 	);
 }
