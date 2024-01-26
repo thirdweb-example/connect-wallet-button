@@ -1,63 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-/* Set core body defaults */
 body {
-	text-rendering: optimizeSpeed;
-	line-height: 1.5;
-	padding-bottom: 250px;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 4rem;
-	min-height: 100vh;
-	padding-left: 1%;
-	padding-right: 1%;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-	font: inherit;
-}
-
-:root {
-	--black: #1c1e21;
-	--white: #ffffff;
-	--tw-color1: #a855f7;
-	--tw-color1-hover: #9333ea;
-}
-
-body {
-	background: var(--black);
+	background: #111;
 	font-family: 'Inter', sans-serif;
-	color: var(--white);
-	display: flex;
+	color: white;
+}
+
+body,
+html {
 	margin: 0;
-}
-
-h1 {
-	line-height: 1.2;
-}
-
-h2 {
-	font-size: 2rem;
-}
-
-.prism-code {
-	margin: 0;
-}
-
-#walletconnect-wrapper a {
-	color: black;
+	padding: 0;
 }
