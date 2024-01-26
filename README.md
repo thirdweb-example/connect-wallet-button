@@ -1,36 +1,9 @@
-# Connect Wallet Button
+# ConnectWallet Example
 
-This template shows you how you can use our `ConnectWallet` component from our React SDK to allow users to connect their wallet with your app with one of the following wallets:
+This template shows you how you can use [`ConnectWallet`](https://portal.thirdweb.com/react/v4/components/ConnectWallet) component to allow users to connect their wallet with your app with one of the following wallets:
 
-- MetaMask
-- Wallet Connect
-- Coinbase Wallet
+## Environment Variables
 
-## Wrap Your Application in the ThirdwebProvider
+To run this project, you will need to add environment variables.
 
-```jsx
-import { ThirdwebProvider } from '@thirdweb-dev/react';
-
-// This is the chainId your dApp will work on.
-const activeChain = 'goerli';
-
-function MyApp({ Component, pageProps }) {
-	return (
-		<ThirdwebProvider activeChain={activeChain}>
-			<Component {...pageProps} />
-		</ThirdwebProvider>
-	);
-}
-
-export default MyApp;
-```
-
-## Use the Connect Wallet Component!
-
-```jsx
-import { ConnectWallet } from '@thirdweb-dev/react';
-
-export default function Home() {
-	return <ConnectWallet theme='dark' />;
-}
-```
+Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
